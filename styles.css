@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+  color: white;
+  border-radius: 15px 50px 30px;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgb(51, 51, 51);
+}
+.parent {
+  width: fit-content;
+  height: fit-content;
+}
+.horizontal {
+  border-bottom: 0.5px solid grey;
+  border-top: 0.5px solid grey;
+}
+
+.vertical {
+  border-right: 0.5px solid grey;
+  border-left: 0.5px solid grey;
+}
+
+.boxes {
+  border-radius: 5px;
+  margin: 1px;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(204, 204, 204);
+  float: left;
+}
+.row {
+  height: fit-content;
+  width: 100%;
+}
+
+.clicked-cross {
+  background-image: url("cross.png");
+  background-size: contain;
+}
+.clicked-circle {
+  background-image: url("circle.jpeg");
+  background-size: contain;
+}
+
+.won {
+  background-color: red;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 10s;
+  transition-duration: 10s;
+}
+
+@media screen and (max-width: 400px) {
+  .boxes {
+    width: 20vw;
+    height: 20vw;
+  }
+}
